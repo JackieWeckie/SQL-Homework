@@ -40,6 +40,7 @@ VALUES ('OReilly'),
 
 SELECT b.title AS book_title,
        p.name  AS publisher_name
+
 FROM books b
          JOIN books_authors ab ON b.id = ab.book_id
          JOIN publishers p on p.id = b.publisher_id;
